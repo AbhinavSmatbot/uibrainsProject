@@ -10,6 +10,10 @@ import { SendMessageComponent } from './components/send-message/send-message.com
 import { ViewMessageComponent } from './components/view-message/view-message.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { EmployeeComponent } from './components/employee/employee.component';
+// import { CustomerService } from './services/customer.service';
+import { AdminModule } from './admin/admin.module';
+import { GithubMainComponent } from './components/github-main/github-main.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,16 @@ import { FormsModule } from '@angular/forms';
     SidebarMainComponent,
     SendMessageComponent,
     ViewMessageComponent,
-    LoginComponent
+    LoginComponent,
+    EmployeeComponent,
+    GithubMainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // CustomerService
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

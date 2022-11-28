@@ -1,1 +1,21 @@
-<p>send-message works!</p>
+<div class="container-fluid mt-5 mb-5">
+    <table class="border-1">
+        <thead>
+            <tr>
+                <th class="fs-4 text-center text-danger">Name</th>
+                <th class="fs-4 text-center text-danger">age</th>
+                <th class="fs-4 text-center text-danger">Dob</th>
+                <th class="fs-4 text-center text-danger">Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let new of customerData">
+                <td>{{new.name}}</td>
+                <td>{{new.age}}</td>
+                <td>{{new.dob}}</td>
+                <td>{{new.address}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

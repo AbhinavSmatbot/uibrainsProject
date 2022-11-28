@@ -1,1 +1,27 @@
-<p>view-message works!</p>
+<div class="container-fluid">
+    <div class="col-sm-12 col-md-12 col-xl-12" *ngFor="let user of allDetails">
+        <div class="col-sm-4 col-md-4 col-xl-4" >
+        <label class="">UserName</label>
+         <input type="text" [(ngModel)]="user.username" name="username" placeholder="ind" />
+        </div>
+        <div class=" col-sm-4 col-md-4 col-xl-4" >
+            <label class="">age</label>
+            <input type="text" [(ngModel)]="user.age" name="age" placeholder="ind" />
+        </div>
+        <div class=" col-sm-4 col-md-4 col-xl-4" >
+            <label class="">Date</label>
+            <input type="text" [(ngModel)]="user.date" name="date" placeholder="ind" />
+        </div>
+        <div class=" col-sm-4 col-md-4 col-xl-4" >
+            <label class="">Address</label>
+            <input type="text" [(ngModel)]="user.add" name="add" placeholder="ind" />
+        </div>
+
+    </div>
+
+    <div class=" col-sm-6 col-md-6 col-xl-6">
+     <button class="btn btn-danger text-white m-auto" (click)="addFiels()">Add</button>
+     <button class="btn btn-danger text-white m-auto" (click)="saveDetails()">save</button>
+    </div>
+
+</div>

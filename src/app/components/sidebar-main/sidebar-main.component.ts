@@ -5,9 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidebar-main.component.html',
   styleUrls: ['./sidebar-main.component.css']
 })
-export class SidebarMainComponent implements OnInit {
-  
-  constructor() { }
+export class SidebarMainComponent {
+  public reciveadata:string = '';
+  public employee:any = {
+    name:'rajan',
+    age:34,
+    designation:'software engneering'
+  };
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
@@ -18,4 +25,5 @@ export class SidebarMainComponent implements OnInit {
   //   // alert('sdfdsfdsfsdfdsf')
   //  }
   }
+  
 }

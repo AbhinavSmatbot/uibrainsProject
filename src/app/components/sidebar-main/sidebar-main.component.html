@@ -16,10 +16,16 @@
               <app-view-message></app-view-message>
            </div>
            <div *ngIf="activeData == 'download_message'" class="h-100 bg-success text-white display-5">
-            <app-send-message></app-send-message>
+            <div class="mt-5">
+              <app-employee (sendData)="reciveadata=$event" [childData]="employee"></app-employee>
+            </div>
            </div>
+           <p>{{reciveadata}}</p>
           </div>
     </div>
     
+    
 
 </div>
+ 
+
